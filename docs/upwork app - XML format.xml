@@ -1,0 +1,14 @@
+<topic>Spanish Phrases</topic> 
+<soundsDirectory>flashAudio</flashAudio>
+<buttons>
+	<button>
+		<english>Bon appetit!</english>
+		<spanish>¡Buen provecho!</spanish>
+		<audio>Buen_provecho</audio>
+	</button>
+	<button>
+		<english>Do you speak English?</english>
+		<spanish>¿Habla usted inglés?</spanish>
+		<audio>Habla_usted_ingles</audio>
+	</button>
+</buttons>
