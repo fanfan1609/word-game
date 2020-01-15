@@ -1,16 +1,34 @@
-<app>
-	<topic>Spanish Phrases</topic>
-	<soundsDirectory>flashAudio</soundsDirectory>
-	<buttons>
-		<button>
-			<english>Bon appetit!</english>
-			<spanish>¡Buen provecho!</spanish>
-			<audio>Buen_provecho</audio>
-		</button>
-		<button>
-			<english>Do you speak English?</english>
-			<spanish>¿Habla usted inglés?</spanish>
-			<audio>Habla_usted_ingles</audio>
-		</button>
-	</buttons>
-</app>
+<topic>Spanish Phrases</topic>
+<soundsDirectory>flashAudio</soundsDirectory>
+<buttons>
+	<button>
+		<english>Good Morning</english>
+		<spanish>Buenos días</spanish>
+		<audio>Buen_provecho</audio>
+	</button>
+	<button>
+		<english>Do you speak English?</english>
+		<spanish>¿Habla usted inglés?</spanish>
+		<audio>Habla_usted_ingles</audio>
+	</button>
+	<button>
+		<english>Good evening</english>
+		<spanish>buena noches!</spanish>
+		<audio>Buen_provecho</audio>
+	</button>
+	<button>
+		<english>How are you?</english>
+		<spanish>Cómo estás?</spanish>
+		<audio>Habla_usted_ingles</audio>
+	</button>
+	<button>
+		<english>How old are you?</english>
+		<spanish>Cuantos años tienes?</spanish>
+		<audio>Buen_provecho</audio>
+	</button>
+	<button>
+		<english>Have a good day</english>
+		<spanish>Tenga un buen día</spanish>
+		<audio>Habla_usted_ingles</audio>
+	</button>
+</buttons>

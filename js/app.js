@@ -1,14 +1,32 @@
 
-// Empty JS for your own code to be here
-var x = new XMLHttpRequest();
-x.open("GET", "http://localhost/word-card/docs/app.xml", true);
-x.onreadystatechange = function () {
-  if (x.readyState == 4 && x.status == 200)
-  {
+// FILE_CONTENT
+var DATA_FILE = "http://localhost/word-card/docs/app.xml"; 
+var ITEM_PER_ROW = 4; // 4 buttons for per row
 
-    console.log(x);
-    var jsonObj = xmlToJSON.parseString(x.response); // Convert XML to JSON
-    console.log(jsonObj);
-  }
-};
-x.send(null);
+$(function(){
+  // load content from file
+  loadContentFromFile();
+
+  
+})
+
+
+/**
+ * Read content from file
+ */
+function loadContentFromFile(){
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", DATA_FILE, true);
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200)
+    {       
+      var parseObj = parser.parse(xhr.response)
+      console.log(parseObj);
+    }
+  };
+  xhr.send(null);
+}
+
+
+
+
