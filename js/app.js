@@ -1,6 +1,6 @@
 
 // FILE_CONTENT
-var DATA_URL          = "http://localhost/word-card/docs/app.xml"; 
+var DATA_URL          = "docs/app.xml"; 
 var ITEM_PER_ROW      = 4; // 4 buttons for per row
 var button_container  = $("#button-container");
 var body = $("body");
