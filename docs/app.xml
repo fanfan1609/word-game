@@ -1,34 +1,59 @@
 <topic>Spanish Phrases</topic>
-<soundsDirectory>flashAudio</soundsDirectory>
+<soundsDirectory>sound</soundsDirectory>
 <buttons>
 	<button>
 		<english>Good Morning</english>
 		<spanish>Buenos días</spanish>
-		<audio>Buen_provecho</audio>
+		<audio>1.mp3</audio>
 	</button>
 	<button>
 		<english>Do you speak English?</english>
 		<spanish>¿Habla usted inglés?</spanish>
-		<audio>Habla_usted_ingles</audio>
+		<audio>2.mp3</audio>
 	</button>
 	<button>
 		<english>Good evening</english>
 		<spanish>buena noches!</spanish>
-		<audio>Buen_provecho</audio>
+		<audio>3.mp3</audio>
 	</button>
 	<button>
 		<english>How are you?</english>
 		<spanish>Cómo estás?</spanish>
-		<audio>Habla_usted_ingles</audio>
+		<audio>4.mp3</audio>
 	</button>
 	<button>
 		<english>How old are you?</english>
 		<spanish>Cuantos años tienes?</spanish>
-		<audio>Buen_provecho</audio>
+		<audio>5.mp3</audio>
 	</button>
 	<button>
-		<english>Have a good day</english>
+		<english>Have a good day2 </english>
 		<spanish>Tenga un buen día</spanish>
-		<audio>Habla_usted_ingles</audio>
+		<audio>1.mp3</audio>
+	</button>
+	<button>
+		<english>Good Morning 2</english>
+		<spanish>Buenos días 2</spanish>
+		<audio>1.mp3</audio>
+	</button>
+	<button>
+		<english>Do you speak English 2?</english>
+		<spanish>¿Habla usted inglés? 2</spanish>
+		<audio>2.mp3</audio>
+	</button>
+	<button>
+		<english>Good evening 2</english>
+		<spanish>buena noches!</spanish>
+		<audio>3.mp3</audio>
+	</button>
+	<button>
+		<english>How are you 2?</english>
+		<spanish>Cómo estás?</spanish>
+		<audio>4.mp3</audio>
+	</button>
+	<button>
+		<english>How old are you?</english>
+		<spanish>Cuantos años tienes?</spanish>
+		<audio>5.mp3</audio>
 	</button>
 </buttons>

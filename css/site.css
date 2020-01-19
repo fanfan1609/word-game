@@ -28,3 +28,8 @@ body.loading .loading-icon {
 body.loading .loading-icon {
     display: block;
 }
+
+.sound-playing {
+    background-image: url("../img/source.gif");
+    background-position: center;
+}
