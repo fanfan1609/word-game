@@ -1,7 +1,7 @@
 
 // FILE_CONTENT
 var DATA_URL          = "docs/app.xml"; // XML URL
-var ITEM_PER_ROW      = 7;              // Buttons for per row
+var ITEM_PER_ROW      = 4;              // Buttons for per row
 var soundDirectory    = "";             // Sound directory
 
 // Define HTML element
@@ -32,10 +32,10 @@ $(function(){
 
   audio_element
     .on("playing", function(){
-      sound_animation.addClass(sound_playing_class);
+      sound_animation.removeClass("d-none");
     })
     .on("ended", function(){
-      sound_animation.removeClass(sound_playing_class);
+      sound_animation.addClass("d-none");
     })
     
 
@@ -92,9 +92,9 @@ function createButtonFromResponse(buttons){
  * @param  is_first The Row is first or not
  */
 function createButtonPerRow(buttons, is_first){
-  var html_string = `<div class="form-row ${is_first == false ? 'mt-2' : ''}">`;
+  var html_string = `<div class="form-row  ${is_first == false ? 'mt-2' : ''}">`;
   buttons.forEach(button => {
-    var button_content = `<div class="col">
+    var button_content = `<div class="col btn-group">
       <button class="btn btn-sm btn-primary btn-block btn-word" 
               onclick="handleClickButton(this)" 
               data-front="${button.english}" 

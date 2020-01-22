@@ -28,15 +28,24 @@ body.loading .loading-icon {
 body.loading .loading-icon {
     display: block;
 }
-
-.sound-playing {
-    background-image: url("../img/source.gif");
-    background-position: center;
+.word-card-container {
+    height: 100%;
+}
+.btn-word {
+    height: 100%;
 }
 
+.sound-container {
+    width: 83px;
+    height: 38px;
+}
 @media (max-width: 576px) {
     .form-row .form-group {
         display: inline-block !important; 
         width: auto!important
     }
+    .sound-container {
+        width: 63px;
+    }
 }
+
