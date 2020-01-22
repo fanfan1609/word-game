@@ -33,3 +33,10 @@ body.loading .loading-icon {
     background-image: url("../img/source.gif");
     background-position: center;
 }
+
+@media (max-width: 576px) {
+    .form-row .form-group {
+        display: inline-block !important; 
+        width: auto!important
+    }
+}
