@@ -11,3 +11,5 @@ Requirements:
 4) As shown in the video, the bottom of the app will include links and an “about” button which will open an “about” box.
 
 5) As shown in the video, all the buttons will be animated when the page containing the app loads.
+
+https://vestride.github.io/Shuffle/adding-removing

@@ -1,3 +1,3 @@
 **QA for this project**
-- [ ] Explain sound dictionary in XML
+- [X] Explain sound dictionary in XML
 - [ ] 

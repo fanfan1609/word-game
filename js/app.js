@@ -1,7 +1,7 @@
 
 // FILE_CONTENT
 var DATA_URL          = "docs/app.xml"; // XML URL
-var ITEM_PER_ROW      = 4;              // Buttons for per row
+var ITEM_PER_ROW      = 7;              // Buttons for per row
 var soundDirectory    = "";             // Sound directory
 
 // Define HTML element
@@ -18,6 +18,7 @@ var sound_playing_class = "sound-playing";
 
 // Onload Event Listener
 window.onload = function(){
+  this.body.addClass("loading");
   readXMLFile(DATA_URL, extractDataFromResponse);
 }
 
@@ -67,6 +68,9 @@ function extractDataFromResponse(response){
 
   // Create buttons
   createButtonFromResponse(parseObj.buttons.button);
+
+  // Remove loading
+  body.removeClass("loading");
 }
 
 /**
@@ -91,7 +95,7 @@ function createButtonPerRow(buttons, is_first){
   var html_string = `<div class="form-row ${is_first == false ? 'mt-2' : ''}">`;
   buttons.forEach(button => {
     var button_content = `<div class="col">
-      <button class="btn btn-primary btn-block btn-word" 
+      <button class="btn btn-sm btn-primary btn-block btn-word" 
               onclick="handleClickButton(this)" 
               data-front="${button.english}" 
               data-back="${button.spanish}" 

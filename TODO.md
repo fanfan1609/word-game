@@ -1,12 +1,11 @@
 **TODO LIST**
-- [ ] Create html structure
-  - [ ] Front text (above input) - row 1
-  - [ ] Back text (below input) - row 2
-  - [ ] Playing/Stop (button) - row 2
-  - [ ] Button rows - multiple rows
-- [ ] HTML audio
-- [ ] Javascript part
-  - [ ] Read XML file
-  - [ ] Load into button
-  - [ ] Design local storage data ??
-  - [ ] 
+- [X] Create html structure
+  - [X] Front text (above input) - row 1
+  - [X] Back text (below input) - row 2
+  - [X] Playing/Stop (button) - row 2
+  - [X] Button rows - multiple rows
+- [X] HTML audio
+- [X] Javascript part
+  - [X] Read XML file
+  - [X] Load into button  
+  
