@@ -39,6 +39,7 @@ body.loading .loading-icon {
     width: 83px;
     height: 38px;
 }
+
 @media (max-width: 576px) {
     .form-row .form-group {
         display: inline-block !important; 

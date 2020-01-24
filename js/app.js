@@ -38,6 +38,9 @@ $(function(){
       sound_animation.addClass("d-none");
     })
     
+  button_container.on("change", function(){
+    console.log("change");
+  })
 
 })
 
@@ -79,11 +82,23 @@ function extractDataFromResponse(response){
  */
 function createButtonFromResponse(buttons){
   var i = 0;
+  html_string = "";
   while(i < buttons.length){
     var row_buttons = buttons.slice(i, Math.min(i + ITEM_PER_ROW, buttons.length) );
-    button_container.append(createButtonPerRow(row_buttons, i == 0));
+    html_string += createButtonPerRow(row_buttons, i == 0);
+    // button_container.append(createButtonPerRow(row_buttons, i == 0));
     i += ITEM_PER_ROW;
-  }
+  }  
+  button_container.append(html_string);
+  setTimeout(function(){
+    button_container.find(".btn-word").css({
+      "transform": "none",
+      "transition-duration": "250ms",
+      "transition-timing-function": "ease",
+      "transition-property": "transform, opacity"
+    })
+    
+  },200)
 }
 
 /**
@@ -94,9 +109,12 @@ function createButtonFromResponse(buttons){
 function createButtonPerRow(buttons, is_first){
   var html_string = `<div class="form-row  ${is_first == false ? 'mt-2' : ''}">`;
   buttons.forEach(button => {
+    var random_x = getRandomFloat(-300,300);
+    var random_y = getRandomFloat(-300,300);
     var button_content = `<div class="col btn-group">
-      <button class="btn btn-sm btn-primary btn-block btn-word" 
-              onclick="handleClickButton(this)" 
+      <button class="btn btn-sm shadow rounded bg-black btn-info btn-block btn-word" 
+              onclick="handleClickButton(this)"
+              style="transform: translate(${random_x}px,${random_y}px)"              
               data-front="${button.english}" 
               data-back="${button.spanish}" 
               data-audio="${soundDirectory + "/" + button.audio}" >${button.english}</button>
@@ -123,7 +141,6 @@ function handleClickButton(button){
   audio_element[0].play();
 }
 
-
-
-
-
+function getRandomFloat(min, max) {
+  return Math.random() * (max - min) + min;
+}
