@@ -121,6 +121,11 @@ function createButtonPerRow(buttons, is_first){
     </div>`;
     html_string += button_content;
   });
+  if(buttons.length < 4){
+    for(var i = 0; i < 4 - buttons.length; i++){
+      html_string += `<div class="col"></div>`
+    }
+  }
   html_string+= `</div>`;
 
   return html_string;
