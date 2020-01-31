@@ -56,12 +56,12 @@ body.loading .loading-icon {
         width: 63px;
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     .sound-container {
         width: 40px;
     }
     #back-word {
-        width: 175px;
+        width: 170px;
     }
 }
 
