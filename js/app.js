@@ -22,6 +22,19 @@ window.onload = function(){
   readXMLFile(DATA_URL, extractDataFromResponse);
 }
 
+function adjust_height(){
+  var max = 0;
+  // get the height of the longest select.select
+  $(".btn-word").each(function() { 
+     var h = $(this).height();
+     if (h > max) 
+        max = h;
+  });
+  console.log(max);
+  // set the height of all select.select to max height
+  $(".btn-word").height(max);
+}
+
 $(function(){
   // Replay button click event
   replay_button.on("click", function(){
@@ -72,6 +85,7 @@ function extractDataFromResponse(response){
   // Create buttons
   createButtonFromResponse(parseObj.buttons.button);
 
+  adjust_height()
   // Remove loading
   body.removeClass("loading");
 }
