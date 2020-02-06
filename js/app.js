@@ -21,6 +21,9 @@ window.onload = function(){
   this.body.addClass("loading");
   readXMLFile(DATA_URL, extractDataFromResponse);
 }
+window.onresize = function(){
+  adjust_height();
+}
 
 function adjust_height(){
   var max = 0;
