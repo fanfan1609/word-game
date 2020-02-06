@@ -18,57 +18,68 @@
 </head>
 
 <body>
-	<div class="container rounded border-success border border-4 bg-info">
-		<div class="form-row mt-2">
-			<div class="form-group col">
-				<input type="text" class="form-control" id="front-word" placeholder="...">
+	<div class="container">
+		<div class="row">
+			<h1 class="display-3">Welcome To Word card game</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+		
+		<div id="app-container" class="mt-2 mb-2 rounded border-success border border-4 bg-info">
+			<div class="form-row mt-2">
+				<div class="form-group col">
+					<input type="text" class="form-control" id="front-word" placeholder="...">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-1 col-sm-2 " >
+					<div class="border border-primary rounded sound-container">
+						<img src="img/sound.gif" class="img-fluid d-none w-100 h-100" id="sound-animation">
+					</div>
+				</div>
+				<div class="form-group col-md-8 col-sm-8">
+					<input type="text" class="form-control" id="back-word" placeholder="...">
+				</div>
+				<div class="form-group col-md-2 col-sm-2">
+					<button type="button" id="replay-button" class="btn btn-primary"><i
+							class="fas fa-volume-up"></i></button>
+				</div>
+			</div>
+	
+			<!-- Button Grid  -->
+			<div id="button-container">
+			</div>
+			<!-- About -->
+			<div class="footer-copyright text-center py-3">© 2020 Copyright
+				<button type="button" class="btn btn-warning float-right" data-toggle="modal" data-target="#aboutModal">
+					About
+				</button>
+			</div>
+			<!-- About Dialog -->
+			<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">About</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>						
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+		
 		<div class="form-row">
-			<div class="form-group col-md-1 col-sm-2 " >
-				<div class="border border-primary rounded sound-container">
-					<img src="img/sound.gif" class="img-fluid d-none w-100 h-100" id="sound-animation">
-				</div>
-			</div>
-			<div class="form-group col-md-8 col-sm-8">
-				<input type="text" class="form-control" id="back-word" placeholder="...">
-			</div>
-			<div class="form-group col-md-2 col-sm-2">
-				<button type="button" id="replay-button" class="btn btn-primary"><i
-						class="fas fa-volume-up"></i></button>
-			</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius ex a tortor fermentum, quis imperdiet mi malesuada. Etiam accumsan felis in nisi tempor, nec viverra est placerat. Pellentesque convallis ultricies mi, nec semper ante vehicula eu. Etiam volutpat, ligula ac feugiat accumsan, erat mauris porttitor eros, sodales bibendum sapien nisl sed turpis. Pellentesque fringilla, nisi et porta malesuada, metus mauris imperdiet diam, a aliquet dui sapien vel augue. Quisque accumsan tristique sapien et convallis. Mauris id odio eget nibh fringilla lacinia. Donec convallis nibh nisl, non volutpat enim fermentum non. Maecenas lacus elit, laoreet ut urna ut, finibus rutrum urna. Phasellus turpis diam, ultricies eu facilisis ut, semper in augue. Ut tempor lorem in sem rutrum, auctor interdum neque ornare. Phasellus tempor laoreet egestas. Donec sodales ante mauris, sit amet mollis ipsum feugiat sit amet. Donec vel accumsan erat, id consequat quam. Phasellus id blandit urna.</p>
 		</div>
-
-		<!-- Button Grid  -->
-		<div id="button-container">
-		</div>
-
-		<!-- About -->
-		<div class="footer-copyright text-center py-3">© 2020 Copyright
-			<button type="button" class="btn btn-warning float-right" data-toggle="modal" data-target="#aboutModal">
-				About
-			</button>
-		</div>
-		<!-- About Dialog -->
-		<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel"
-			aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">About</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						...
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>						
-					</div>
-				</div>
-			</div>
-		</div>
+		
 	</div>
 
 	<!--　Loading Icon -->
