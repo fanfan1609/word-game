@@ -21,9 +21,13 @@ window.onload = function(){
   this.body.addClass("loading");
   readXMLFile(DATA_URL, extractDataFromResponse);
 }
+
+// resize event
 window.onresize = function(){
-  adjust_height();
+  //console.log("resizeing")
+  //adjust_height();
 }
+
 
 function adjust_height(){
   var max = 0;
@@ -33,6 +37,7 @@ function adjust_height(){
      if (h > max) 
         max = h;
   });
+  
   console.log(max);
   // set the height of all select.select to max height
   $(".btn-word").height(max);
@@ -88,7 +93,7 @@ function extractDataFromResponse(response){
   // Create buttons
   createButtonFromResponse(parseObj.buttons.button);
 
-  adjust_height()
+  //adjust_height()
   // Remove loading
   body.removeClass("loading");
 }
