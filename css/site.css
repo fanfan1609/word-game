@@ -17,6 +17,10 @@ our animation centered, and no-repeating */
                 no-repeat;
 }
 
+body {
+    min-width: 400px;
+}
+
 /* When the body has the loading class, we turn
     the scrollbar off with overflow:hidden */
 body.loading .loading-icon {
@@ -64,4 +68,3 @@ body.loading .loading-icon {
         width: 175px;
     }
 }
-
