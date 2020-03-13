@@ -68,3 +68,21 @@ body.loading .loading-icon {
         width: 175px;
     }
 }
+
+@media screen and (orientation:landscape) and (max-device-width: 768px)
+{
+    #app-container {
+        width: 80%;
+        height: 80%;
+        margin: 10%;
+    }
+}
+
+@media screen and (orientation:portrait) and (max-device-width: 768px)
+{
+    #app-container {
+        width: 80%;
+        height: 80%;
+        margin: 10%;
+    }
+}
