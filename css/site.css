@@ -69,6 +69,12 @@ body.loading .loading-icon {
     }
 }
 
+.mobile-scale {
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+}
+
 @media screen and (orientation:landscape) and (max-device-width: 768px)
 {
     #app-container {

@@ -12,6 +12,7 @@ var back_word         = $("#back-word");
 var audio_element     = $("#sound-play");
 var replay_button     = $("#replay-button");
 var sound_animation   = $("#sound-animation");
+var app_container     = $("#app-container");
 
 // Define sound play class
 var sound_playing_class = "sound-playing";
@@ -22,11 +23,18 @@ window.onload = function(){
   readXMLFile(DATA_URL, extractDataFromResponse);
 }
 
-// resize event
-window.onresize = function(){
-  //console.log("resizeing")
-  //adjust_height();
+
+var onresize = function(e) {
+  //note i need to pass the event as an argument to the function
+  var width = e.target.outerWidth;
+  
+  if(app_container.hasClass("mobile-scale")){
+    if(width > 768) app_container.removeClass("mobile-scale");
+  } else {
+    if(width <= 768) app_container.addClass("mobile-scale");
+  }
 }
+window.addEventListener("resize", onresize);
 
 
 function adjust_height(){
