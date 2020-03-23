@@ -13,12 +13,17 @@ var audio_element     = $("#sound-play");
 var replay_button     = $("#replay-button");
 var sound_animation   = $("#sound-animation");
 var app_container     = $("#app-container");
+// Add for debug
+var screen_w          = $("#screen-w");
+var screen_h          = $("#screen-h");
 
 // Define sound play class
 var sound_playing_class = "sound-playing";
 
 // Onload Event Listener
-window.onload = function(){
+window.onload = function(e){
+  screen_w.html(e.currentTarget.outerWidth);
+  screen_h.html(e.currentTarget.outerHeight);
   this.body.addClass("loading");
   readXMLFile(DATA_URL, extractDataFromResponse);
 }
@@ -33,6 +38,8 @@ var onresize = function(e) {
   } else {
     if(width <= 768) app_container.addClass("mobile-scale");
   }
+  screen_w.html(e.target.outerWidth);
+  screen_h.html(e.target.outerHeight);
 }
 window.addEventListener("resize", onresize);
 
