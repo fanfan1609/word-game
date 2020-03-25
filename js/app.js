@@ -16,6 +16,9 @@ var app_container     = $("#app-container");
 // Add for debug
 var screen_w          = $("#screen-w");
 var screen_h          = $("#screen-h");
+var app_screen_w      = $("#app-screen-w");
+var app_screen_h      = $("#app-screen-h");
+
 
 // Define sound play class
 var sound_playing_class = "sound-playing";
@@ -24,6 +27,8 @@ var sound_playing_class = "sound-playing";
 window.onload = function(e){
   screen_w.html(e.currentTarget.outerWidth);
   screen_h.html(e.currentTarget.outerHeight);
+  this.app_screen_w.html(app_container.outerWidth())
+  this.app_screen_h.html(app_container.outerHeight())
   this.body.addClass("loading");
   readXMLFile(DATA_URL, extractDataFromResponse);
 }
@@ -40,6 +45,8 @@ var onresize = function(e) {
   }
   screen_w.html(e.target.outerWidth);
   screen_h.html(e.target.outerHeight);
+  this.app_screen_w.html(app_container.outerWidth())
+  this.app_screen_h.html(app_container.outerHeight())
 }
 window.addEventListener("resize", onresize);
 
